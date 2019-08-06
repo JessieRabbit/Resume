@@ -1,0 +1,451 @@
+/* reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* layout */
+body {
+    font-family: Microsoft JhengHei;
+}
+
+.wrap {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.header {
+    background: url(../images/img-headerShape.png) no-repeat;
+    padding: 125px 135px 125px 135px;
+}
+
+.footer {
+    background-image: url(../images/img-Looper-bg.png);
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 34px;
+    padding-bottom: 34px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* 獨立 */
+.intro {
+    float: left;
+    text-align: center;
+    margin-right: 136px;
+}
+
+.intro h1 {
+    font-size: 42px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.intro .photo {
+    border-radius: 50%;
+}
+
+.intro p {
+    font-size: 14px;
+    color: #4A4A4A;
+    line-height: 1.5;
+}
+
+.concat {
+    font-size: 18px;
+}
+
+.concat li {
+    margin-bottom: 10px;
+}
+
+.concat li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.concat li img {
+    /* 問! 字體與圖片沒有對齊置中??? */
+    /* float: left; */
+    margin-right: 12px;
+}
+
+.content {
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.content h2 {
+    color: #1736DC;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 48px;
+}
+
+.content h3 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.skill {
+    margin-bottom: 56px;
+}
+
+.skill li {
+    position: relative;
+    float: left;
+    border: 1px solid #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px #dbdbdb;
+    padding: 35px;
+    margin-right: 20px;
+    color: #4A4A4A;
+}
+
+.skill p {
+    width: 215px;
+    font-size: 10px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.skill .skillBottom1,
+.skill .skillBottom2,
+.skill .skillBottom3 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 284px;
+    border-radius: 0 0 10px 10px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+
+.skill .skillBottom1 {
+    background: #F58D23;
+}
+
+.skill .skillBottom2 {
+    background: #539E43;
+}
+
+.skill .skillBottom3 {
+    background: #6762A6;
+}
+
+.exp {
+    position: relative;
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.exp .dotStart {
+    position: absolute;
+    left: 445px;
+    top: 71px;
+    z-index: 1;
+}
+
+.exp .dotTimeItem1 {
+    position: absolute;
+    left: 448px;
+    top: 148px;
+    z-index: 1;
+}
+
+.exp .dotTimeItem2 {
+    position: absolute;
+    left: 448px;
+    top: 293px;
+    z-index: 1;
+}
+
+.exp .dotTimeItem3 {
+    position: absolute;
+    left: 448px;
+    top: 439px;
+    z-index: 1;
+}
+
+.exp .exp1,
+.exp .exp2,
+.exp .exp3 {
+    width: 260px;
+    border: 1px solid #FB56BF;
+    border-radius: 10px;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.53px;
+    color: #4A4A4A;
+}
+
+.exp .exp1 {
+    position: absolute;
+    left: 155px;
+    top: 293px;
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.exp .exp2 {
+    position: absolute;
+    right: 155px;
+    top: 145px;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.exp .exp3 {
+    position: absolute;
+    right: 155px;
+    top: 436px;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.exp .expSectionBold {
+    width: 460px;
+    border-right: 1px solid #D8D8D8;
+    padding-top: 297px;
+    padding-bottom: 297px;
+}
+
+.exp .boxBottom {
+    position: absolute;
+    bottom: 0;
+    left: 430px;
+    background: #D8D8D8;
+    width: 60px;
+    border-radius: 2px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.exp .redFont {
+    color: #8A1737;
+}
+
+.exp span {
+    font-weight: bold;
+}
+
+.works .worksFont {
+    color: #FB56BF;
+}
+
+.works .work1 div {
+    background-color: #fdb4e3;
+    padding: 35px 0 0 80px;
+    margin-bottom: 10px;
+}
+
+.works .work2 div {
+    background-color: #424242;
+    padding: 35px 102px 35px 102px;
+    margin-bottom: 10px;
+}
+
+.works .work3 div {
+    background-color: #8ad7fa;
+    padding: 35px 102px 35px 102px;
+    margin-bottom: 10px;
+}
+
+.works li {
+    float: left;
+    margin-right: 20px;
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 98px;
+}
+
+.works li span {
+    font-weight: bold;
+}
+
+.works li span,
+.works li p {
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.works li:hover {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.40);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.about {
+    padding-right: 110px;
+    padding-left: 176px;
+    text-align: center;
+    margin-bottom: 74px;
+}
+
+.about h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fb56bf;
+    margin-bottom: 48px;
+}
+
+.aboutPhoto {
+    float: left;
+    background: url(../images/photo.png) no-repeat top;
+    background-size: cover;
+    width: 260px;
+    margin-right: 44px;
+    padding-top: 167px;
+    padding-bottom: 167px;
+}
+
+.about p {
+    text-align: left;
+    padding-top: 30px;
+    line-height: 26px;
+    font-size: 14px;
+}
