@@ -20,99 +20,129 @@
 
 <body>
     <div class="wrap">
+        <!-- fix: 1..intro, .concat 的部分建議可以使用相對於 .header 的方式做絕對定位 -->
         <div class="header">
             <div class="intro">
                 <img src="images/photo.png" alt="photo" class="photo" width="151px" height="151px">
                 <h1>藍鵑秀</h1>
                 <p>Jessie<br />Front-End Developer</p>
             </div>
-            <div class="concat">
-                <ul>
-                    <li>
-                        <a href="#" target="_blank" title="連到地址">
-                            <img src="images/icon-location.png" alt="Banqiao" width="28px" height="36px">
-                            Tapei / Banqiao
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank" title="連到mail">
-                            <img src="images/icon-mail.png" alt="Banqiao" width="30px" height="24px">
-                            a0915655212@gmail.com
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank" title="連到github">
-                            <img src="images/icon-github.png" alt="Banqiao" width="32px" height="31px">
-                            ChengSiou
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="clearfix"></div>
+            <!-- <div class="concat"> -->
+            <!-- fix: 2.concat 樣式可以寫到裡面的 ul 上，減少 div 的使用可以讓網頁更簡潔 -->
+            <ul class="concat">
+                <li>
+                    <a href="#" target="_blank" title="連到地址">
+                        <img src="images/icon-location.png" alt="address" width="28px" height="36px">
+                        Tapei / Banqiao
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" title="連到mail">
+                        <img src="images/icon-mail.png" alt="mail" width="30px" height="24px">
+                        a0915655212@gmail.com
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" title="連到github">
+                        <img src="images/icon-github.png" alt="github" width="32px" height="31px">
+                        ChengSiou
+                    </a>
+                </li>
+            </ul>
+            <!-- </div> -->
         </div>
         <div class="content">
             <div class="skill">
                 <h2>Modern Web Skills</h2>
                 <ul>
-                    <li>
-                        <img src="images/img-skill-icon-1.png" alt="skill1" width="92px" height="76px">
+                    <li class="skill-layout">
+                        <img src="images/img-skill-icon-1.png" alt="skill-layout" width="92px" height="76px">
                         <h3>Web Layout</h3>
-                        <p>
+                        <!-- fix: 6..skill p 列表建議改用 ul li 來呈現，前面的圓點可使用 list-style: disc 來表示 -->
+                        <ul class="desc">
+                            <li>RWD + Sass</li>
+                            <li>Boostrap 3</li>
+                            <li>FB pixel、schema.org</li>
+                            <li>大型電子商務版型規劃經驗 (2 years）</li>
+                        </ul>
+                        <!-- <p>
                             • RWD + Sass<br />
                             • Boostrap 3<br />
                             • FB pixel、schema.org<br />
                             • 大型電子商務版型規劃經驗 (2 years）
-                        </p>
-                        <div class="skillBottom1"></div>
+                        </p> -->
+                        <!-- fix: 3..skillBottom1,skillBottom2,skillBottom3 建議可以為 .skill li 的 border-bottom 來呈現，減少 div 的使用可以讓網頁更簡潔 -->
+                        <!-- <div class="skillBottom1"></div> -->
                     </li>
-                    <li>
-                        <img src="images/img-skill-icon-2.png" alt="skill2" width="92px" height="76px">
+                    <li class="skill-js">
+                        <img src="images/img-skill-icon-2.png" alt="skill-js" width="92px" height="76px">
                         <h3>JavaScript & Node.js</h3>
-                        <p>
+                        <ul class="desc">
+                            <li>jQuery animation</li>
+                            <li>AJAX/JSON 3</li>
+                            <li>Vue.js (1 years)</li>
+                            <li>Node.js / express</li>
+                        </ul>
+                        <!-- <p>
                             • jQuery animation<br />
                             • AJAX/JSON<br />
                             • Vue.js (1 years)<br />
                             • Node.js / express
-                        </p>
-                        <div class="skillBottom2"></div>
+                        </p> -->
+                        <!-- <div class="skillBottom2"></div> -->
                     </li>
-                    <li>
-                        <img src="images/img-skill-icon-3.png" alt="skill3" width="92px" height="76px">
+                    <li class="skill-dev">
+                        <img src="images/img-skill-icon-3.png" alt="skill-dev" width="92px" height="76px">
                         <h3>Dev Helper</h3>
-                        <p>
+                        <ul class="desc">
+                            <li>Git / Github</li>
+                            <li>Heroku / AWS EC2、S3</li>
+                            <li>gulp / webpack</li>
+                            <li>介接歐付寶、玉山銀行金流經驗</li>
+                        </ul>
+                        <!-- <p>
                             • Git / Github<br />
                             • Heroku / AWS EC2、S3<br />
                             • gulp / webpack<br />
                             • 介接歐付寶、玉山銀行金流經驗
-                        </p>
-                        <div class="skillBottom3"></div>
+                        </p> -->
+                        <!-- <div class="skillBottom3"></div> -->
                     </li>
                 </ul>
                 <div class="clearfix"></div>
             </div>
 
+            <!-- fix: 4..expSectionBold 所有區塊都以相對於 .expSectionBold 做絕對定位排版，日後很難維護網站，例如可將 .dotTimeItem1 以相對於 .exp2 做絕對定位排版，日後區塊內容增加時，不需更動所有元素定位
+5.建議將 HTML 元素以排版順序來排序，結構較符合邏輯 -->
             <div class="exp">
                 <h2>Experience</h2>
                 <div class="expSectionBold">
-                    <div class="exp1">
-                        <p><span>2015/03 - 2015/06</span><br /><span class="redFont">Web
-                                Developer軟體工程師</span><br />甜點資訊開發股份有限公司<br />Implemented a system for
-                            creating campaign landing pages from the CMS.</p>
-                    </div>
-                    <div class="exp2">
+                    <img src="images/dot-start.png" class="dotStart" alt="dot-start" width="32px" height="37px">
+                    <div class="exp-hex">
+                        <img src="images/dot-timeItem.png" class="dotTime-hex" alt="dot-timeItem" width="24px"
+                            height="28px">
                         <p><span>2016/01 - Present</span><br /><span class="redFont">Web Developer
                                 資深工程師</span><br />六角超有創意有限公司<br />Implemented a system for
                             creating campaign landing pages from the CMS.</p>
                     </div>
-                    <div class="exp3">
+                    <div class="exp-sweet">
+                        <img src="images/dot-timeItem.png" class="dotTime-sweet" alt="dot-timeItem" width="24px"
+                            height="28px">
+                        <p><span>2015/03 - 2015/06</span><br /><span class="redFont">Web
+                                Developer軟體工程師</span><br />甜點資訊開發股份有限公司<br />Implemented a system for
+                            creating campaign landing pages from the CMS.</p>
+                    </div>
+                    <div class="exp-front">
+                        <img src="images/dot-timeItem.png" class="dotTime-front" alt="dot-timeItem" width="24px"
+                            height="28px">
                         <p><span>2010/01 - 2015/3</span><br /><span class="redFont">Web Developer
                                 網頁工程師</span><br />前端無極限有限公司<br />Implemented a system for
                             creating campaign landing pages from the CMS.<p>
                     </div>
-                    <img src="images/dot-start.png" class="dotStart" alt="" width="32px" height="37px">
-                    <img src="images/dot-timeItem.png" class="dotTimeItem1" alt="" width="24px" height="28px">
-                    <img src="images/dot-timeItem.png" class="dotTimeItem2" alt="" width="24px" height="28px">
-                    <img src="images/dot-timeItem.png" class="dotTimeItem3" alt="" width="24px" height="28px">
+                    <!-- <img src="images/dot-start.png" class="dotStart" alt="" width="32px" height="37px"> -->
+                    <!-- <img src="images/dot-timeItem.png" class="dotTimeItem1" alt="" width="24px" height="28px"> -->
+                    <!-- <img src="images/dot-timeItem.png" class="dotTimeItem2" alt="" width="24px" height="28px">
+                    <img src="images/dot-timeItem.png" class="dotTimeItem3" alt="" width="24px" height="28px"> -->
                     <div class="boxBottom"></div>
                 </div>
             </div>
@@ -120,23 +150,24 @@
             <div class="works">
                 <h2 class="worksFont">Works 作品</h2>
                 <ul>
-                    <li class="work1">
+                    <li class="code-work">
                         <div>
-                            <img src="images/logo-work-1.png" alt="" width="207px" height="114px">
+                            <img src="images/logo-work-1.png" alt="code-work" width="207px" height="114px">
                         </div>
                         <span>Works 1 title</span>
                         <p>Lorem ipsum dolor sit amet</p>
                     </li>
-                    <li class="work2">
+                    <!-- fix: 請盡量減少方向性、編號式的命名方式，改用語意的方式來取代，例如 .work2 的部分 bmi-work -->
+                    <li class="bmi-work">
                         <div>
-                            <img src="images/logo-work-2.png" alt="" width="80px" height="80px">
+                            <img src="images/logo-work-2.png" alt="bmi-work" width="80px" height="80px">
                         </div>
                         <span>Works 2 title</span>
                         <p>Lorem ipsum dolor sit amet</p>
                     </li>
-                    <li class="work3">
+                    <li class="excel-work">
                         <div>
-                            <img src="images/logo-work-3.png" alt="" width="80px" height="80px">
+                            <img src="images/logo-work-3.png" alt="excel-work" width="80px" height="80px">
                         </div>
                         <span>Works 3 title</span>
                         <p>Lorem ipsum dolor sit amet</p>

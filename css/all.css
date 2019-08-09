@@ -146,8 +146,9 @@ body {
 }
 
 .header {
+    position: relative;
     background: url(../images/img-headerShape.png) no-repeat;
-    padding: 125px 135px 125px 135px;
+    padding: 200px 135px 290px 135px;
 }
 
 .footer {
@@ -165,9 +166,12 @@ body {
 
 /* 獨立 */
 .intro {
+    position: absolute;
+    left: 127px;
+    top: 121px;
     float: left;
     text-align: center;
-    margin-right: 136px;
+    /* margin-right: 136px; */
 }
 
 .intro h1 {
@@ -187,6 +191,9 @@ body {
 }
 
 .concat {
+    position: absolute;
+    left: 475px;
+    top: 121px;
     font-size: 18px;
 }
 
@@ -228,8 +235,10 @@ body {
     margin-bottom: 56px;
 }
 
-.skill li {
-    position: relative;
+.skill .skill-layout,
+.skill .skill-js,
+.skill .skill-dev {
+    /* position: relative; */
     float: left;
     border: 1px solid #f7f7f7;
     border-radius: 10px;
@@ -239,14 +248,35 @@ body {
     color: #4A4A4A;
 }
 
-.skill p {
+.skill .skill-layout {
+    border-bottom: 10px solid #F58D23;
+}
+
+.skill .skill-js {
+    border-bottom: 10px solid #539E43;
+}
+
+.skill .skill-dev {
+    border-bottom: 10px solid #6762A6;
+}
+
+.skill .desc li {
     width: 215px;
     font-size: 10px;
     line-height: 1.5;
     text-align: left;
+    list-style: disc;
 }
 
-.skill .skillBottom1,
+/* .skill p {
+    width: 215px;
+    font-size: 10px;
+    line-height: 1.5;
+    text-align: left;
+} */
+
+/* fix: 3..skillBottom1,skillBottom2,skillBottom3 建議可以為 .skill li 的 border-bottom 來呈現，減少 div 的使用可以讓網頁更簡潔 */
+/* .skill .skillBottom1,
 .skill .skillBottom2,
 .skill .skillBottom3 {
     position: absolute;
@@ -256,9 +286,9 @@ body {
     border-radius: 0 0 10px 10px;
     padding-bottom: 3px;
     padding-top: 3px;
-}
+} */
 
-.skill .skillBottom1 {
+/* .skill .skillBottom1 {
     background: #F58D23;
 }
 
@@ -268,7 +298,7 @@ body {
 
 .skill .skillBottom3 {
     background: #6762A6;
-}
+} */
 
 .exp {
     position: relative;
@@ -283,30 +313,35 @@ body {
     z-index: 1;
 }
 
-.exp .dotTimeItem1 {
+.exp .dotTime-hex {
     position: absolute;
-    left: 448px;
-    top: 148px;
+    /* left: 448px;
+    top: 148px; */
+    left: -42px;
+    top: 0;
     z-index: 1;
 }
 
-.exp .dotTimeItem2 {
+.exp .dotTime-sweet {
     position: absolute;
-    left: 448px;
-    top: 293px;
+    /* left: 448px; */
+    top: 0px;
+    right: -47px;
     z-index: 1;
 }
 
-.exp .dotTimeItem3 {
+.exp .dotTime-front {
     position: absolute;
-    left: 448px;
-    top: 439px;
+    /* left: 448px;
+    top: 439px; */
+    left: -42px;
+    top: 0;
     z-index: 1;
 }
 
-.exp .exp1,
-.exp .exp2,
-.exp .exp3 {
+.exp .exp-sweet,
+.exp .exp-hex,
+.exp .exp-front {
     width: 260px;
     border: 1px solid #FB56BF;
     border-radius: 10px;
@@ -316,30 +351,37 @@ body {
     color: #4A4A4A;
 }
 
-.exp .exp1 {
-    position: absolute;
+.exp .exp-sweet {
+    /* position: absolute; */
+    position: relative;
     left: 155px;
-    top: 293px;
+    top: 57px;
     text-align: right;
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-.exp .exp2 {
-    position: absolute;
-    right: 155px;
-    top: 145px;
+.exp .exp-hex {
+    /* position: absolute; */
+    position: relative;
+    /* right: 155px;
+    top: 145px; */
+    left: 490px;
+    top: 70px;
     text-align: left;
     padding-left: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-.exp .exp3 {
-    position: absolute;
-    right: 155px;
-    top: 436px;
+.exp .exp-front {
+    /* position: absolute; */
+    position: relative;
+    /* right: 155px;
+    top: 436px; */
+    left: 490px;
+    top: 70px;
     text-align: left;
     padding-left: 10px;
     padding-top: 10px;
@@ -349,8 +391,9 @@ body {
 .exp .expSectionBold {
     width: 460px;
     border-right: 1px solid #D8D8D8;
-    padding-top: 297px;
-    padding-bottom: 297px;
+    /* padding-top: 297px;
+    padding-bottom: 297px; */
+    padding-bottom: 180px;
 }
 
 .exp .boxBottom {
@@ -372,23 +415,28 @@ body {
     font-weight: bold;
 }
 
+/* fix: 8..works li 下邊間距、留白的部分建議可以由 .works 的 padding 統一管理*/
+.works {
+    margin-bottom: 98px;
+}
+
 .works .worksFont {
     color: #FB56BF;
 }
 
-.works .work1 div {
+.works .code-work div {
     background-color: #fdb4e3;
     padding: 35px 0 0 80px;
     margin-bottom: 10px;
 }
 
-.works .work2 div {
+.works .bmi-work div {
     background-color: #424242;
     padding: 35px 102px 35px 102px;
     margin-bottom: 10px;
 }
 
-.works .work3 div {
+.works .excel-work div {
     background-color: #8ad7fa;
     padding: 35px 102px 35px 102px;
     margin-bottom: 10px;
@@ -399,7 +447,7 @@ body {
     margin-right: 20px;
     text-align: left;
     font-size: 14px;
-    margin-bottom: 98px;
+    /* margin-bottom: 98px; */
 }
 
 .works li span {
@@ -420,8 +468,8 @@ body {
 }
 
 .about {
-    padding-right: 110px;
-    padding-left: 176px;
+    padding-right: 145px;
+    padding-left: 145px;
     text-align: center;
     margin-bottom: 74px;
 }
