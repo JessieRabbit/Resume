@@ -483,7 +483,7 @@ body {
 
 .aboutPhoto {
     float: left;
-    background: url(../images/photo.png) no-repeat top;
+    background: url(../images/photo.jpg) no-repeat top;
     background-size: cover;
     width: 260px;
     margin-right: 44px;
