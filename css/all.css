@@ -317,16 +317,16 @@ body {
     position: absolute;
     /* left: 448px;
     top: 148px; */
-    left: -42px;
-    top: 0;
+    left: 449px;
+    top: 70px;
     z-index: 1;
 }
 
 .exp .dotTime-sweet {
     position: absolute;
     /* left: 448px; */
-    top: 0px;
-    right: -47px;
+    left: 449px;
+    top: 57px;
     z-index: 1;
 }
 
@@ -334,32 +334,31 @@ body {
     position: absolute;
     /* left: 448px;
     top: 439px; */
-    left: -42px;
-    top: 0;
+    left: 449px;
+    top: 70px;
     z-index: 1;
 }
 
-.exp .exp-sweet,
-.exp .exp-hex,
-.exp .exp-front {
+.exp .sweet-section,
+.exp .hex-section,
+.exp .front-section {
     width: 260px;
-    border: 1px solid #FB56BF;
+    border: 1px solid #fb56bf;
     border-radius: 10px;
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.53px;
-    color: #4A4A4A;
+    color: #4a4a4a;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .exp .exp-sweet {
     /* position: absolute; */
     position: relative;
-    left: 155px;
-    top: 57px;
     text-align: right;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 .exp .exp-hex {
@@ -367,12 +366,7 @@ body {
     position: relative;
     /* right: 155px;
     top: 145px; */
-    left: 490px;
-    top: 70px;
     text-align: left;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 .exp .exp-front {
@@ -380,12 +374,25 @@ body {
     position: relative;
     /* right: 155px;
     top: 436px; */
+    text-align: left;
+}
+
+.exp .hex-section {
+    position: relative;
     left: 490px;
     top: 70px;
-    text-align: left;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+}
+
+.exp .sweet-section {
+    position: relative;
+    left: 155px;
+    top: 57px;
+}
+
+.exp .front-section {
+    position: relative;
+    left: 490px;
+    top: 70px;
 }
 
 .exp .expSectionBold {
