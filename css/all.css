@@ -432,20 +432,21 @@ body {
 }
 
 .works .code-work div {
-    background-color: #fdb4e3;
-    padding: 35px 0 0 80px;
+    /* background-color: #fdb4e3; */
+    /* padding: 35px 0 0 80px; */
+    background-color: #000000;
     margin-bottom: 10px;
 }
 
 .works .bmi-work div {
     background-color: #424242;
-    padding: 35px 102px 35px 102px;
+    /* padding: 35px 102px 35px 102px; */
     margin-bottom: 10px;
 }
 
 .works .excel-work div {
     background-color: #8ad7fa;
-    padding: 35px 102px 35px 102px;
+    /* padding: 35px 102px 35px 102px; */
     margin-bottom: 10px;
 }
 
@@ -472,6 +473,11 @@ body {
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.40);
     border-radius: 4px;
     cursor: pointer;
+}
+
+.works li a {
+    text-decoration: none;
+    color: #000000;
 }
 
 .about {
