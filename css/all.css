@@ -365,6 +365,11 @@ body {
     padding-bottom: 10px;
 }
 
+.exp .exp-vip {
+    position: relative;
+    text-align: right;
+}
+
 .exp .exp-sweet {
     /* position: absolute; */
     position: relative;
@@ -384,11 +389,6 @@ body {
     position: relative;
     /* right: 155px;
     top: 436px; */
-    text-align: left;
-}
-
-.exp .exp-vip {
-    position: relative;
     text-align: left;
 }
 
