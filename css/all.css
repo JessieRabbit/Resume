@@ -313,7 +313,7 @@ body {
     z-index: 1;
 }
 
-.exp .dotTime-hex {
+.exp .dotTime-vip {
     position: absolute;
     /* left: 448px;
     top: 148px; */
@@ -322,11 +322,20 @@ body {
     z-index: 1;
 }
 
+.exp .dotTime-hex {
+    position: absolute;
+    /* left: 448px;
+    top: 148px; */
+    left: 449px;
+    top: 100px;
+    z-index: 1;
+}
+
 .exp .dotTime-sweet {
     position: absolute;
     /* left: 448px; */
     left: 449px;
-    top: 57px;
+    top: 130px;
     z-index: 1;
 }
 
@@ -335,13 +344,14 @@ body {
     /* left: 448px;
     top: 439px; */
     left: 449px;
-    top: 70px;
+    top: 160px;
     z-index: 1;
 }
 
 .exp .sweet-section,
 .exp .hex-section,
-.exp .front-section {
+.exp .front-section,
+.exp .vip-section {
     width: 260px;
     border: 1px solid #fb56bf;
     border-radius: 10px;
@@ -377,22 +387,33 @@ body {
     text-align: left;
 }
 
+.exp .exp-vip {
+    position: relative;
+    text-align: left;
+}
+
+.exp .vip-section {
+    position: relative;
+    left: 155px;
+    top: 70px;
+}
+
 .exp .hex-section {
     position: relative;
     left: 490px;
-    top: 70px;
+    top: 100px;
 }
 
 .exp .sweet-section {
     position: relative;
     left: 155px;
-    top: 57px;
+    top: 120px;
 }
 
 .exp .front-section {
     position: relative;
     left: 490px;
-    top: 70px;
+    top: 160px;
 }
 
 .exp .expSectionBold {
