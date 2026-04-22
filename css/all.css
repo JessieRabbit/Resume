@@ -313,6 +313,15 @@ body {
     z-index: 1;
 }
 
+.exp .dotTime-fox {
+    position: absolute;
+    /* left: 448px;
+    top: 148px; */
+    left: 449px;
+    top: 40px;
+    z-index: 1;
+}
+
 .exp .dotTime-vip {
     position: absolute;
     /* left: 448px;
@@ -351,7 +360,8 @@ body {
 .exp .sweet-section,
 .exp .hex-section,
 .exp .front-section,
-.exp .vip-section {
+.exp .vip-section,
+.exp .fox-section {
     width: 260px;
     border: 1px solid #fb56bf;
     border-radius: 10px;
@@ -363,6 +373,11 @@ body {
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.exp .exp-fox {
+    position: relative;
+    text-align: left;
 }
 
 .exp .exp-vip {
@@ -390,6 +405,12 @@ body {
     /* right: 155px;
     top: 436px; */
     text-align: left;
+}
+
+.exp .fox-section {
+    position: relative;
+    left: 490px;
+    top: 40px;
 }
 
 .exp .vip-section {
