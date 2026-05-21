@@ -552,3 +552,8 @@ body {
     line-height: 26px;
     font-size: 14px;
 }
+
+.link {
+    display: flex;
+    align-items: center;
+}
